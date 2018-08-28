@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/wallpaper2you_322292.png");
+    color: black;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+#logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background: silver;
+}
+
+.navbar-defaul .navbar-nav > li > a:hover {
+    color: #4aaaa5;
+}
+
+.navbar {
+    height: 60px;
+    border: none;
+    background-color: grey !important;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+#con {
+    margin-top: 50px;
+}
+
+#con h1 {
+    font-size: 40px ;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.brand {
+    text-align: center;
+}
+
+.brand span {
+    color: white;
+}
+
+.wrapper {
+    background-color: silver;
+    box-shadow: 0 0 20px 0 rgba(2, 7, 12, 0.993);
+}
+.wrapper > *{
+    padding: 1em;
+}
+
+.my-info {
+    background: gray;
+}
+
+.my-info h3, .my-info ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact {
+    background: silver;
+}
+
+/*  FORM STYLES*/
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact form label  {
+    display: block;
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form .full {
+    grid-column: 1 / 3;
+}
+
+.contact form button {
+    width: 100%;
+    padding: 1em;
+    background: gray;
+    border: 0;
+    text-transform: uppercase;
+    border: 1px solid silver;
+}
+
+.contact form input {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid gray;
+}
+
+.contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid gray;
+}
+
+.contact form button:hover,.contact form button:focus {
+    background-image: url("../images/wallpaper2you_322292.png");
+    color: white;
+    outline: 0;
+    transition: background-image 2s ease-out;
+}
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: green;
+    color: white;
+    margin-bottom: 10px;
+    display: none;
+}
+
+
+#footer {
+    position: absolute !important;
+    border: none;
+    bottom: 0;
+    width: 100% !important;
+    height: 60px;
+    background-color: grey;
+    padding: 0
+  }
+
+  .two-toned-footer-color {
+    height: 6px;
+    padding-top: 3px;
+    background-color: silver;
+  }
+
+  .text-muted-footer {
+    margin-top: 15px;
+    color: black !important;
+  }
+
+/* LARGE SCREENS*/
+@media(min-width:700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .wrapper > * {
+        padding: 2em;
+    }
+
+    .my-info h3, .my-info ul, .brand {
+        text-align: left;
+    }
+}
+

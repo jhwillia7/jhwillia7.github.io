@@ -1,54 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
-    <meta charset="utf-8" />
-    <title>John Williams Portfolio</title>
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>John H Williams - Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen">
 </head>
 
 <body>
-    
-    <header id="mainhead">
+
+    <nav class="navbar navbar-light bg-light fixed-top navbar-expand-md">
         <div class="container">
-            <a href="index.html" id="logo">John H Williams</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contacts</a>
-            </nav>
+            <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#page-nav-collapse" aria-expanded="true">
+                <span class="sr-only">Toggle navigation</span>
+                &#x2630;</button>
+            <a class="navbar-brand" href="index.html" id="logo">John H Williams</a>
+            <div class="collapse navbar-collapse" id="page-nav-collapse">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/john-h-williams-1a4757/" class="nav-link">My LinkedIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/jhwillia7" class="nav-link">My GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio1.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact1.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <div id="main-container" class="container">
-        <section class="main-section">
-            <h1>About John</h1>
+    <main class="container">
+        <div class="headerContainer">
+            <div class="sign-up-box"></div>
+            <div class="col-lg-12 jumbotron" style="overflow:auto">
+                <h1>
+                    <span class="glyphicon glyphicon-foodie"></span> Hosting Is My Specialty
+                    <span class="glyphicon glyphicon-foodie"></span>
+                </h1>
+                <p>Data Center / Cloud / Enterprise / Full Stack Software Development</p>
+            </div>
+        </div>
+        <section class="row">
+            <div class="col-lg-12">
+                <article class="block">
+                    <h1 class="block-header">About John</h1>
+                    <hr>
+                    <img src="assets/images/JHW_Pic.jpg" alt="profile pic" id="about-image">
+                    <p>
+                        Infrastructure Technologist in eCommerce, Enterprise and CDN environments across a variety of business verticals. Full Stack
+                        Software Development background. Organizational leader with a proven track record of building and
+                        retaining high performance organizations with a focus on designing, delivering and operating infrastructure
+                        at scale.
+                    </p>
 
-            <img src="assets/images/JHW_Pic.jpg" class="auth-image" alt="John">
+                    <p>
+                        I have a proven track record for creating and managing the successful delivery of robust global IT infrastructure and services.
+                        My technical, analytical and transformational leadership skills have proven to be the best tools
+                        for organizing, managing, motivating and leading global teams of senior level IT architects and engineering
+                        resources.
+                    </p>
+                    <br>
+                    <p>
+                        <ul>
+                            <strong>Specialties:</strong>
 
-            <p>With over twenty years of experience in the field of Information Technology, I have a proven track record
-            for creating and managing the successful delivery of a robust global IT infrastructure and services. My technical,
-            analytical and transformational leadership skills have proven to be the best tools for organizing, managing,
-            motivating and leading global teams of senior level IT architects, engineering resources along with mid-level
-            and front line managers.
-            <p>
-
-            <p>Specialties: Utility, Oil & Gas, Enterprise Software, Enterprise Networks, Project Management, Data Center Hosting
-                (both private and public clouds) IT Strategy, Healthcare, Financial Services, SaaS, PaaS, IaaS, Data Center
-                Hosting, Cloud Hosting, Network Engineering, Voice Engineering
-            </p>
+                            <li>Software Defined Architectures (Network and Data Center)</li>
+                            <li>Cloud Based Architectures</li>
+                            <li>Data Center (Hosting and Co-location)</li>
+                            <li>Global Operations and Management</li>
+                            <li>Innovation Management</li>
+                            <li>Strategic Agility</li>
+                            <li>Business Operations</li>
+                            <li>Program and Project Management</li>
+                            <li>Vendor and Service Management (Sourcing, Supplier Management and Negotiations)</li>
+                            <li>Budgetary Management (Forecasting, Cost Analysis, Cost Containment and Cost Savings)</li>
+                            <li>Mergers & Acquisitions</li>
+                        </ul>
+                    </p>
+                </article>
+            </div>
         </section>
-    </div>
-    <footer>
-        <div class="container">
-            &copy; Copyright 2018 John H Williams
-        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">&#xA9; Copyright 2018 John H Williams</p>
     </footer>
+
 </body>
 
 </html>
